@@ -1,5 +1,4 @@
 import openpyxl
-import cv2
 
 class Generator():
     '''
@@ -18,7 +17,6 @@ class Generator():
         self.coordinates    = self._set_coordinates()
         self.font_option    = self._set_font()
         print(self.names)
-        cv2.imshow(self.certificate)
     def _load_names(self, dir_excelsheet, sheet_name, header_location):
         '''
         Returns an array of all the names in the excelsheet
@@ -36,8 +34,7 @@ class Generator():
         '''
         Returns the image in which certificate is to be loaded
         '''
-        img = cv2.imread(dir_certificate, 1)
-        return img
+        return {}
     def _set_coordinates(self):
         '''
         Display the image and ask for user input. Returns a tuple
