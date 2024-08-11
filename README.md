@@ -19,3 +19,5 @@ _Made with <3 by Tanay Shah_
 2. Opencv
 3. Tkinter
 4. Numpy
+5. Fpdf
+
